@@ -1,3 +1,34 @@
+const movies = [
+    {
+        title: "The Matrix",
+        year: 1999,
+        descripsion: "ths is the good movies all of time",
+        author: "lambada",
+    },
+    {
+        title: "The conjjuring 2",
+        year: 2016,
+        descripsion: "this is the best horror movies all of time",
+        author: "limbad",
+    }
+];
+const user = {
+    username: "qitmir",
+    favorite: "the conjuring 2",
+};
+const movies1 = movies[0];
+const movies2 = movies[1];
+
+const all = [user, movies1, movies2];
+console.log(all);
+
+
+
+
+
+
+
+
 const filmHoror = document.getElementsByTagName("article")[0];
 const filmKomedi = document.getElementsByTagName("article")[1];
 const filmAction = document.getElementsByTagName("article")[2];
@@ -16,39 +47,6 @@ function articleEffect() {
 }
 
 filmKomedi.addEventListener("click", articleEffect);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 function setNewElement() {
