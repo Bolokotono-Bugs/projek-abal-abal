@@ -1,5 +1,6 @@
+/*
 
-console.log("%cWELLcome to App Abal-Abal", "color: red; font-size: 24px;");
+console.warn("%cWELLcome to App Abal-Abal", "color: red; font-size: 24px;");
 
 const movies = [
     {
@@ -40,10 +41,12 @@ console.table(movies1);
 console.log({movies2});
 
 console.log({movies3});
+
+ 
 // const all = [user, movies1, movies2, movies3];
 // console.table(all);
 
-
+*/
 
 
 
