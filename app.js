@@ -2,7 +2,7 @@ const movies = [
     {
         title: "The Matrix",
         year: 1999,
-        descripsion: "ths is the good movies all of time",
+        descripsion: "ths is the good action movies all of time",
         author: "lambada",
     },
     {
@@ -10,7 +10,14 @@ const movies = [
         year: 2016,
         descripsion: "this is the best horror movies all of time",
         author: "limbad",
+    },
+    {
+        title: "the scarry movie",
+        year: 2000,
+        descripsion: "this is the best comedy movies all of time",
+        author: "limva",
     }
+
 ];
 const user = {
     username: "qitmir",
@@ -18,8 +25,9 @@ const user = {
 };
 const movies1 = movies[0];
 const movies2 = movies[1];
+const movies3 = movies[2];
 
-const all = [user, movies1, movies2];
+const all = [user, movies1, movies2, movies3];
 console.log(all);
 
 
