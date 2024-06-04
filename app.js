@@ -1,3 +1,6 @@
+
+console.log("%cWELLcome to App Abal-Abal", "color: red; font-size: 24px;");
+
 const movies = [
     {
         title: "The Matrix",
@@ -26,11 +29,17 @@ const user = {
     username: "qitmir",
     favorite: "the conjuring 2",
 };
+console.group("%cLOG FOR MOVIES", "color: green; font-size: 24px;");
 const movies1 = movies[0];
 const movies2 = movies[1];
 const movies3 = movies[2];
+console.groupEnd();
 
 console.table(movies1);
+
+console.log({movies2});
+
+console.log({movies3});
 // const all = [user, movies1, movies2, movies3];
 // console.table(all);
 
@@ -44,6 +53,12 @@ console.table(movies1);
 const filmHoror = document.getElementsByTagName("article")[0];
 const filmKomedi = document.getElementsByTagName("article")[1];
 const filmAction = document.getElementsByTagName("article")[2];
+
+console.group("%cLOG FOR ARTICLE", "color: green; font-size: 24px;");
+console.info(filmHoror);
+console.info(filmKomedi);
+console.info(filmAction);
+console.groupEnd();
 
 function articleEffect() {
     filmKomedi.style.backgroundColor = "green";
