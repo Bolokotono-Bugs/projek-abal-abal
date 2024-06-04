@@ -19,6 +19,9 @@ const movies = [
     }
 
 ];
+
+console.table(movies);
+
 const user = {
     username: "qitmir",
     favorite: "the conjuring 2",
@@ -27,8 +30,9 @@ const movies1 = movies[0];
 const movies2 = movies[1];
 const movies3 = movies[2];
 
-const all = [user, movies1, movies2, movies3];
-console.log(all);
+console.table(movies1);
+// const all = [user, movies1, movies2, movies3];
+// console.table(all);
 
 
 
