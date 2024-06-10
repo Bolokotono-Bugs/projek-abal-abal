@@ -118,8 +118,10 @@ function articleEffect() {
     deskripsi3.textContent = inputDeskripsi3;
 }*/
 
-function getUserData() {
-    console.log("get user data");
-    const apiURL = "https://dummyjson.com/user/1";
-    fetch(apiURL).then((data) = console.log(data));
+function getUserData(idUser) {
+    const apiURL = "https://dummyjson.com/users/" + idUser;
+    console.log({apiURL});
+    fetch(apiURL).then((data) => data.json()) //formatting data to json
+    .then((user) => (namaLengkap.textContent = user.username  //getting user data
+    ));
 }
