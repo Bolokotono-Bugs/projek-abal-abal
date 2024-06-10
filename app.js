@@ -95,7 +95,7 @@ function articleEffect() {
 // filmKomedi.addEventListener("click", articleEffect);
 
 
-function setNewElement() {
+/*function setNewElement() {
     const inputNamaLengkap = prompt("masukan username");
     namaLengkap.textContent = inputNamaLengkap;
 
@@ -116,4 +116,10 @@ function setNewElement() {
 
     const inputDeskripsi3 = prompt("masukan deskripsi film action");
     deskripsi3.textContent = inputDeskripsi3;
+}*/
+
+function getUserData() {
+    console.log("get user data");
+    const apiURL = "https://dummyjson.com/user/1";
+    fetch(apiURL).then((data) = console.log(data));
 }
