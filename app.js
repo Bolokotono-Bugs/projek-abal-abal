@@ -57,12 +57,27 @@ const filmHoror = document.getElementsByTagName("article")[0];
 const filmKomedi = document.getElementsByTagName("article")[1];
 const filmAction = document.getElementsByTagName("article")[2];
 
+/*
 console.group("%cLOG FOR ARTICLE", "color: green; font-size: 24px;");
 console.info(filmHoror);
 console.info(filmKomedi);
 console.info(filmAction);
 console.groupEnd();
+*/
 
+function articleEffectOff() {
+    console.log("off");
+    filmHoror.style.scale = "1";
+    filmKomedi.style.scale = "1";
+    filmAction.style.scale = "1";
+}
+
+function removeArticle() {
+    const isConfirm = confirm("Are you sure?");
+    // if (!isConfirm) return;
+    // filmKomedi.remove();
+    if (isConfirm) {filmKomedi.remove();}
+}
 function articleEffect() {
     filmKomedi.style.backgroundColor = "green";
     filmKomedi.style.color = "red";
@@ -76,7 +91,8 @@ function articleEffect() {
     filmAction.style.transition = "1500ms";
 }
 
-filmKomedi.addEventListener("click", articleEffect);
+
+// filmKomedi.addEventListener("click", articleEffect);
 
 
 function setNewElement() {
