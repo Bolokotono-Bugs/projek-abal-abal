@@ -28,9 +28,15 @@
         function register() {
             const inputUsername = username.value;
             const inputPassword = password.value;
-            
-            alert(inputUsername);
-            alert(inputPassword);
+             
+            if(inputUsername.length < 5) {
+                return alert("username minimal 5 karakter");
+            }
+            if(inputPassword.length < 8) {
+                return alert("password minimal 8 karakter");
+            }
+
+            alert("register success");
         }
     </script>
 </body>
