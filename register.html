@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register #</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
     <header>
@@ -11,7 +13,18 @@
         <button onclick="getUserData()">Swich User</button>
     </header>
     <main>
-        <h3>welcome</h3>
+        <form onsubmit="register()" method="post">
+            <label for="username">Username</label>
+            <input type="text" id="username">
+
+            <label for="password">Password</label>
+            <input type="password" id="password">
+
+            <button type="submit">Register</button>
+            <button onclick="" type="submit">login</button>
+
+        </form>
+
     </main>
 
     <footer>
